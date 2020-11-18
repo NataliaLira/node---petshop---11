@@ -16,6 +16,7 @@ server.listen(3000, 'localhost',()=>{
     console.log("Servidor ON!")
 })
 
-//Pratica I: 
+//Pratica I: '
 //- Criar servidor que escute na porta 3030;
 //- Criar rota '/' que nos liste todos os pets
+// - Criar rota '/pet' query params
