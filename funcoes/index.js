@@ -24,6 +24,19 @@ function vacinarPet(pet, vacina) {
   }
   function listarPets(pets) {
     // recebe um array de pets e listas todos os pets do sistema (com nome, raca e dono)
+    let lista = ""
+    pets.forEach( (pet) => {
+      lista += " | "
+      lista += pet.nome 
+    })
+    return lista
   }
 
-module.exports = {listarPets}
+  function buscarPet(pets, nome){
+    let resultado = ""
+    let find = pets.find( (pet, nPosicao) =>  { return pets[nPosicao].nome == nome} )
+    console.log(find);
+    return resultado
+  }
+
+module.exports = {listarPets, buscarPet}
