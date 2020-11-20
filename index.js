@@ -48,7 +48,7 @@ const server = http.createServer((req,res) => {
     else if (rota == "/pet"){
         let qnome = query.nome
         let pet = funcoes.buscarPet(pets, qnome)
-        res.write(pet)
+        res.write(pet.nome)
     } else {
 
     }
